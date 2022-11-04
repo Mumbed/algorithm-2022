@@ -1,0 +1,3 @@
+/Users/ys/CLionProjects/heap/cmake-build-debug/CMakeFiles/heap.dir
+/Users/ys/CLionProjects/heap/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ys/CLionProjects/heap/cmake-build-debug/CMakeFiles/rebuild_cache.dir

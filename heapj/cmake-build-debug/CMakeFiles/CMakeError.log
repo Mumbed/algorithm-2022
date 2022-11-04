@@ -1,0 +1,819 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+72
+2022-09-15 18:36:33.268 xcodebuild[1820:17779] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:33.277 xcodebuild[1820:17779] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600000c88d20>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600002894240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1824 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+72
+2022-09-15 18:36:34.003 xcodebuild[1832:17860] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:34.010 xcodebuild[1832:17860] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600001f31860>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600003b24240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1834 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+72
+2022-09-15 18:36:34.733 xcodebuild[1837:17914] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:34.741 xcodebuild[1837:17914] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000018d78e0>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600003ccc240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1839 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+72
+2022-09-15 18:36:35.455 xcodebuild[1841:17939] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:35.462 xcodebuild[1841:17939] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x60000334aa80>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x60000175c240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1843 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+72
+2022-09-15 18:36:36.167 xcodebuild[1845:17958] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:36.174 xcodebuild[1845:17958] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600001ea0820>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600003abc240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1847 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+72
+2022-09-15 18:36:36.885 xcodebuild[1849:17986] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:36.892 xcodebuild[1849:17986] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600000661d60>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x60000227c240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1851 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+72
+2022-09-15 18:36:37.630 xcodebuild[1859:18030] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:37.638 xcodebuild[1859:18030] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600003f1d4a0>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600001b00240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1862 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+72
+2022-09-15 18:36:38.425 xcodebuild[1864:18060] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:38.432 xcodebuild[1864:18060] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000039c1720>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600001ddc240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1866 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+72
+2022-09-15 18:36:39.157 xcodebuild[1868:18103] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:39.164 xcodebuild[1868:18103] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000017cc500>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x6000033ec240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1870 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+72
+2022-09-15 18:36:39.871 xcodebuild[1872:18122] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:39.877 xcodebuild[1872:18122] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000035ddd60>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x6000011c0240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1874 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+72
+2022-09-15 18:36:40.596 xcodebuild[1876:18150] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:40.604 xcodebuild[1876:18150] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600000860fa0>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600002c7c240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1878 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+72
+2022-09-15 18:36:41.308 xcodebuild[1880:18183] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:41.315 xcodebuild[1880:18183] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600001545fe0>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600003164240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1882 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+2022-09-15 18:36:42.012 xcodebuild[1884:18207] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:42.019 xcodebuild[1884:18207] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000014ec140>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x6000030f0240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1886 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+2022-09-15 18:36:42.716 xcodebuild[1888:18227] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:42.724 xcodebuild[1888:18227] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x600000ecb340>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x600002ad4240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1890 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/ys/CLionProjects/heapj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/ys/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.25/CLion.app/Contents/bin/ninja/mac/ninja cmTC_4807a && [1/2] Building C object CMakeFiles/cmTC_4807a.dir/CMakeCCompilerABI.c.o
+FAILED: CMakeFiles/cmTC_4807a.dir/CMakeCCompilerABI.c.o 
+/usr/bin/cc   -arch arm64 -o CMakeFiles/cmTC_4807a.dir/CMakeCCompilerABI.c.o -c '/Users/ys/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.25/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCCompilerABI.c'
+2022-09-15 18:36:43.464 xcodebuild[1899:18282] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:43.471 xcodebuild[1899:18282] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000011ba620>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x6000035a4240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1903 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+ninja: build stopped: subcommand failed.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/ys/CLionProjects/heapj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/ys/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.25/CLion.app/Contents/bin/ninja/mac/ninja cmTC_00855 && [1/2] Building C object CMakeFiles/cmTC_00855.dir/testCCompiler.c.o
+FAILED: CMakeFiles/cmTC_00855.dir/testCCompiler.c.o 
+/usr/bin/cc   -arch arm64 -o CMakeFiles/cmTC_00855.dir/testCCompiler.c.o -c /Users/ys/CLionProjects/heapj/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+2022-09-15 18:36:44.238 xcodebuild[1912:18349] [MT] DVTPlugInLoading: Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin), error = Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}, dyldError = dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0000): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator
+2022-09-15 18:36:44.245 xcodebuild[1912:18349] [MT] DVTAssertions: ASSERTION FAILURE in /System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot2/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/DVTFrameworks/DVTFrameworks-21303/DVTFoundation/PlugInArchitecture/DataModel/DVTPlugIn.m:374
+Details:  Failed to load code for plug-in com.apple.dt.IDESimulatorAvailability (/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin)
+Please ensure Xcode packages are up-to-date — try running 'xcodebuild -runFirstLaunch'.
+
+NSBundle error: Error Domain=NSCocoaErrorDomain Code=3588 "dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator" UserInfo={NSLocalizedFailureReason=The bundle couldn’t be loaded., NSLocalizedRecoverySuggestion=Try reinstalling the bundle., NSFilePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, NSDebugDescription=dlopen(/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability, 0x0109): Symbol not found: _OBJC_CLASS_$_SimDiskImage
+  Referenced from: <5AAC3E24-B91B-3854-80ED-9C4EEADF71E7> /Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin/Contents/MacOS/IDESimulatorAvailability
+  Expected in:     <4BC5E57A-A569-3F93-8E87-BF4D01F7B15A> /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator, NSBundlePath=/Applications/Xcode.app/Contents/PlugIns/IDESimulatorAvailability.ideplugin, NSLocalizedDescription=The bundle “IDESimulatorAvailability” couldn’t be loaded.}
+Object:   <DVTPlugIn: 0x6000022ed540>
+Method:   -loadAssertingOnError:error:
+Thread:   <_NSMainThread: 0x6000006ec240>{number = 1, name = main}
+Hints: 
+
+Backtrace:
+  0   -[DVTAssertionHandler handleFailureInMethod:object:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
+  1   _DVTAssertionHandler (in DVTFoundation)
+  2   _DVTAssertionFailureHandler (in DVTFoundation)
+  3   -[DVTPlugIn plugInManager] (in DVTFoundation)
+  4   -[DVTExtension _fireExtensionFaultAssertingOnError:error:] (in DVTFoundation)
+  5   __80-[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:]_block_invoke (in DVTFoundation)
+  6   _dispatch_client_callout (in libdispatch.dylib)
+  7   _dispatch_lane_barrier_sync_invoke_and_complete (in libdispatch.dylib)
+  8   DVTDispatchBarrierSync (in DVTFoundation)
+  9   -[DVTDispatchLock performLockedBlock:] (in DVTFoundation)
+ 10   -[DVTExtension _valueForKey:inParameterData:usingSchema:assertingOnError:error:] (in DVTFoundation)
+ 11   -[DVTExtension valueForKey:] (in DVTFoundation)
+ 12   _IDEInitializeOnePlugInAndPrerequisites (in IDEFoundation)
+ 13   _IDEInitializePlugIns (in IDEFoundation)
+ 14   IDEInitialize (in IDEFoundation)
+ 15   -[Xcode3CommandLineBuildTool run] (in Xcode3Core)
+ 16   XcodeBuildMain (in libxcodebuildLoader.dylib)
+ 17   start (in dyld)
+sh: line 1:  1917 Abort trap: 6           /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null
+cc: error: sh -c '/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -find clang 2> /dev/null' failed with exit code 34304: (null) (errno=Invalid argument)
+xcode-select: Failed to locate 'clang', requesting installation of command line developer tools.
+ninja: build stopped: subcommand failed.
+
+
+

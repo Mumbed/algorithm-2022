@@ -1,0 +1,3 @@
+/Users/ys/CLionProjects/bfs_list/cmake-build-debug/CMakeFiles/bfs_list.dir
+/Users/ys/CLionProjects/bfs_list/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ys/CLionProjects/bfs_list/cmake-build-debug/CMakeFiles/rebuild_cache.dir

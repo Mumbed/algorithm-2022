@@ -1,0 +1,3 @@
+/Users/ys/CLionProjects/PrimMST/cmake-build-debug/CMakeFiles/PrimMST.dir
+/Users/ys/CLionProjects/PrimMST/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ys/CLionProjects/PrimMST/cmake-build-debug/CMakeFiles/rebuild_cache.dir

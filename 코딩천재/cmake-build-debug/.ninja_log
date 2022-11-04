@@ -1,0 +1,4 @@
+# ninja log v5
+0	128	1642689571464498413	CMakeFiles/library.c.dir/test.cpp.o	33f77e96bd8301f0
+1	176	1642689571514440529	CMakeFiles/library.c.dir/wontest.c.o	48841ee69eb253a0
+176	228	1642689571568277000	liblibrary.c.a	4a029e7ea6970e45
