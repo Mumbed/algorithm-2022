@@ -12,9 +12,10 @@ typedef struct GraphType {
     int weight[MAX_VERTICES][MAX_VERTICES];
 }GraphType;
 
-int distance[MAX_VERTICES];
-int found[MAX_VERTICES];
+int distance[MAX_VERTICES];   //최단거리
+int found[MAX_VERTICES];      // 방문한 노드
 
+//가장 최소 거리를 가지는 정점을 반환합니다
 int choose(int distance[], int n, int found[]){
     int min, minpos;
     min = INT_MAX;
@@ -45,6 +46,8 @@ void print_status(GraphType *g){
     }
     printf("\n\n");
 }
+
+// 다익스트라를 수행하는 함수
 void shortest_path(GraphType * g, int start){
     int u;
     for(int i = 0; i <g->n; i++){
