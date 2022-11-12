@@ -13,9 +13,10 @@ int list[MAX_SIZE];
 void selection_sort(int list[], int n){
     int i, j, least, temp;
     for(i=0; i<n-1; i++){
-        if(list[j]<list[least]){
+        least = i;
+        for(j=i+1; j<n; j++>){
+        if(list[j]<list[least])
             least = j;
-        }
         SWAP(list[i], list[least],temp);
     }
 }
