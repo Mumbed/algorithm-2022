@@ -3,6 +3,8 @@
 //퀵 정렬 (성능 O(log2n))
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 #define MAX_SIZE 10
 //매크로 함수 1 치환 : 전처리기 2 컴파일러 계산
 //#define SQ(x) ((x)*(x))
@@ -10,14 +12,25 @@
 
 int list[MAX_SIZE];
 
-void selection_sort(int list[], int n){
+void selection_sort(int list[], int n) {
     int i, j, least, temp;
-    for(i=0; i<n-1; i++){
+    for (i = 0; i < n - 1; i++) {
         least = i;
-        for(j=i+1; j<n; j++>){
-        if(list[j]<list[least])
-            least = j;
-        SWAP(list[i], list[least],temp);
+        for (j = i + 1; j < n; j++)
+            if (list[j] < list[least])
+                least = j;
+            SWAP(list[i], list[least], temp);
     }
 }
+int main(){
+    int i,n;
+    n = MAX_SIZE;
+    srand(time(NULL));
+    for(i = 0; i < n; i++)
+        list[i] = rand() % 100;
 
+    selection_sort(list,n);
+    for(i=0; i < n; i++)
+        printf("%d ", list[i]);
+    printf("\n");
+}
