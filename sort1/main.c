@@ -11,7 +11,7 @@
 #define SWAP(x,y,t) ((t) = (x), (x) = (y), (y) = (t))
 
 int list[MAX_SIZE];
-
+void prn_sort(int list[], int n);
 void selection_sort(int list[], int n) {
     int i, j, least, temp;
     for (i = 0; i < n - 1; i++) {
@@ -19,8 +19,16 @@ void selection_sort(int list[], int n) {
         for (j = i + 1; j < n; j++)
             if (list[j] < list[least])
                 least = j;
+        prn_sort(list, n);
             SWAP(list[i], list[least], temp);
+
     }
+}
+void prn_sort(int list[], int n){
+    for(int i = 0; i < n; i++) {
+        printf("%3d", list[i]);
+    }
+    printf("\n");
 }
 int main(){
     int i,n;
@@ -28,9 +36,9 @@ int main(){
     srand(time(NULL));
     for(i = 0; i < n; i++)
         list[i] = rand() % 100;
-
+    printf("---정렬 전 데이터---\n");
     selection_sort(list,n);
-    for(i=0; i < n; i++)
-        printf("%d ", list[i]);
+    printf("---정렬 후 데이터---\n");
+    prn_sort(list, n);
     printf("\n");
 }
