@@ -19,8 +19,10 @@ void selection_sort(int list[], int n) {
         for (j = i + 1; j < n; j++)
             if (list[j] < list[least])
                 least = j;
-        prn_sort(list, n);
+
             SWAP(list[i], list[least], temp);
+            printf("%d단계",i);
+            prn_sort(list, n);
 
     }
 }
@@ -37,6 +39,7 @@ int main(){
     for(i = 0; i < n; i++)
         list[i] = rand() % 100;
     printf("---정렬 전 데이터---\n");
+    prn_sort(list, n);
     selection_sort(list,n);
     printf("---정렬 후 데이터---\n");
     prn_sort(list, n);
