@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#define INF 1000L
 #define MAX_VERTICES 100
+#define TRUE 1
+#define FALSE 0
 int parent [MAX_VERTICES];
 void set_init(int n){
     for(int i=0; i<n; i++){
