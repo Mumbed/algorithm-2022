@@ -59,12 +59,13 @@ void prim(GraphType2 *g, int s){
         u = get_min_vertex(g->n);
         selected[u] = TRUE;
         if(distance[u] == INF) return;
-        printf("정점 %d 추가\n",u);
-
+        printf("정점 %d 추가 ",u);
         for(int v = 0; v < g->n; v++)
             if(g->weight[u][v] != INF)
                 if(!selected[v] && g->weight[u][v]< distance[v])
                     distance[v] = g->weight[u][v];
+        printf("distance: %d ",distance[u]);
+        printf("selected: %d\n",selected[u]);
     }
     for(int i = 0; i < g->n; i++){
         distance[i] = 0;
@@ -188,6 +189,28 @@ void shortest_path(GraphType3 * g, int start){
         }
     }
 }
+void shortest_path1(GraphType3 * g, int start){
+    int u = 0;
+    for(int i = 0; i <g->n; i++){
+        distance[i] = g->weight[start][i];
+        found[i] = FALSE;
+    }
+    found[start] = TRUE;
+    distance[start] = 0;
+    for(int i = 0; i < g->n; i++){
+        printf("정점 : %d     ",u);
+        print_status(g);
+        u = choose(distance,g->n,found);
+        found[u]= TRUE;
+        //distance 배열의 거리값을 재설정
+        for(int w = 0; w < g->n; w++){
+            if(!found[w]){
+                if(distance[u] + g->weight[u][w] < distance[w])
+                    distance[w] = distance[u] + g->weight[u][w];
+            }
+        }
+    }
+}
 typedef struct GraphType4{
     int n;
     int weight[MAX_VERTICES][MAX_VERTICES];
@@ -237,20 +260,22 @@ int main() {
         if(menunum == 1){
         printf("1. Kruskal 출력\n");
         printf("2. Prim 출력\n");
+        printf("3. 5번 출력\n");
         scanf(" %d",&a);
         if(a == 1){
             GraphType1 *g1;
             g1 = (GraphType1 *) malloc(sizeof(GraphType1));
             graph_init(g1);
-            insert_edge(g1,0,1,29);
-            insert_edge(g1,1,2,16);
-            insert_edge(g1,2,3,12);
-            insert_edge(g1,3,4,22);
-            insert_edge(g1,4,5,27);
-            insert_edge(g1,5,0,10);
-            insert_edge(g1,6,1,15);
-            insert_edge(g1,6,3,18);
-            insert_edge(g1,6,4,25);
+            insert_edge(g1,0,1,7);
+            insert_edge(g1,1,2,8);
+            insert_edge(g1,2,4,5);
+            insert_edge(g1,4,6,9);
+            insert_edge(g1,6,5,11);
+            insert_edge(g1,5,3,6);
+            insert_edge(g1,3,0,5);
+            insert_edge(g1,3,4,15);
+            insert_edge(g1,3,1,9);
+            insert_edge(g1,4,5,8);
             kruskal(g1);
             free(g1);
 
@@ -258,16 +283,29 @@ int main() {
         else if (a == 2) {
             GraphType2 g2 = {7,
                            {
-                                   {0,29,INF,INF,INF,10,INF},
-                                   {29,0,16,INF,INF,INF,15},
-                                   {INF,16,0,12,INF,INF,INF},
-                                   {INF,INF,12,0,22,INF,18},
-                                   {INF,INF,INF,22,0,27,25},
-                                   {10,INF,INF,INF,27,0,INF},
-                                   {INF,15,INF,18,25,INF,0}
+                                   {0,7,INF,5,INF,INF,INF},
+                                   {7,0,8,9,7,INF,INF},
+                                   {INF,8,0,INF,INF,INF,INF},
+                                   {5,9,INF,0,15,6,INF},
+                                   {INF,7,5,15,0,8,9},
+                                   {INF,INF,INF,6,8,0,11},
+                                   {INF,INF,INF,INF,9,11,0}
                            }
             };
             prim(&g2,0);
+        }
+        else if( a== 3){
+            GraphType3 g4 = {6,
+                             {{0, 50, 45, 10, INF, INF, INF},
+                              {INF, 0, 10, 15, INF, INF, INF},
+                              {INF, INF, 0, INF, 30, INF, INF},
+                              {20, INF, INF, 0, 15, INF, INF},
+                              {INF, 20, 35, INF, 0, INF, INF},
+                              {INF, INF, INF, INF, 3, 0, INF}
+                             }
+            };
+            shortest_path1(&g4, 0);
+
         }
         }
         else if(menunum ==2){
