@@ -153,6 +153,9 @@ int choose(int distance1[], int n, int found[]){
 void print_status(GraphType3 *g){
     static int step = 1;
     printf("Step %d", step++);
+    if(step >6){
+        step =1;
+    }
     printf("\n");
     printf("---distance :   ");
     for(int i = 0; i < g->n; i++){
@@ -167,6 +170,50 @@ void print_status(GraphType3 *g){
         printf("%2d ", found[i]);
     }
     printf("\n\n");
+
+}
+void print_status1(GraphType3 *g){
+    static int step = 1;
+    printf("Step %d", step++);
+    if(step >6){
+        step =1;
+    }
+    printf("\n");
+    printf("---distance :   ");
+    for(int i = 0; i < g->n; i++){
+        if(distance[i] == INF)
+            printf(" * ");
+        else
+            printf("%2d ", distance[i]);
+    }
+    printf("\n");
+    printf("---found    :   ");
+    for(int i = 0; i < g->n; i++){
+        printf("%2d ", found[i]);
+    }
+    printf("\n\n");
+
+}
+void print_status2(GraphType3 *g){
+    static int step = 0;
+    step++;
+    if(step == 6) {
+    printf("Step %d", step);
+    if(step >6){
+        step =1;
+    }
+    printf("\n");
+
+        printf("---distance :   ");
+        for (int i = 0; i < g->n; i++) {
+            if (distance[i] == INF)
+                printf(" * ");
+            else
+                printf("%2d ", distance[i]);
+        }
+    }
+    printf("\n\n");
+
 }
 void shortest_path(GraphType3 * g, int start){
     int u;
@@ -189,6 +236,22 @@ void shortest_path(GraphType3 * g, int start){
         }
     }
 }
+void print_status3(GraphType3 *g){
+    static int step = 1;
+    printf("Step %d", step++);
+    if(step >6){
+        step =1;
+    }
+    printf("\n");
+    printf("---distance :   ");
+    for(int i = 0; i < g->n; i++){
+        if(distance[i] == INF)
+            printf(" * ");
+        else
+            printf("%2d ", distance[i]);
+    }
+    printf("\n");
+}
 void shortest_path1(GraphType3 * g, int start){
     int u = 0;
     for(int i = 0; i <g->n; i++){
@@ -199,7 +262,7 @@ void shortest_path1(GraphType3 * g, int start){
     distance[start] = 0;
     for(int i = 0; i < g->n; i++){
         printf("정점 : %d     ",u);
-        print_status(g);
+        print_status1(g);
         u = choose(distance,g->n,found);
         found[u]= TRUE;
         //distance 배열의 거리값을 재설정
@@ -210,6 +273,56 @@ void shortest_path1(GraphType3 * g, int start){
             }
         }
     }
+}
+void shortest_path2(GraphType3 * g, int start) {
+    int u = 0;
+    for (int i = 0; i < g->n; i++) {
+        distance[i] = g->weight[start][i];
+        found[i] = FALSE;
+    }
+    found[start] = TRUE;
+    distance[start] = 0;
+    for (int i = 0; i < g->n; i++) {
+        printf("정점 : %d ->", u);
+//        print_status2(g);
+        u = choose(distance, g->n, found);
+        found[u] = TRUE;
+        //distance 배열의 거리값을 재설정
+        for (int w = 0; w < g->n; w++) {
+            if (!found[w]) {
+                if (distance[u] + g->weight[u][w] < distance[w])
+                    distance[w] = distance[u] + g->weight[u][w];
+            }
+        }
+        printf("distance : ");
+        if (distance[i] == INF)
+            printf(" * ");
+        else
+            printf("%2d ", distance[i]);
+    }
+    printf("\n");
+}
+void shortest_path3(GraphType3 * g, int start) {
+    int u = 0;
+    for (int i = 0; i < g->n; i++) {
+        distance[i] = g->weight[start][i];
+        found[i] = FALSE;
+    }
+    found[start] = TRUE;
+    distance[start] = 0;
+    for (int i = 0; i < g->n; i++) {
+        print_status3(g);
+        u = choose(distance, g->n, found);
+        found[u] = TRUE;
+        //distance 배열의 거리값을 재설정
+        for (int w = 0; w < g->n; w++) {
+            if (!found[w]) {
+                if (distance[u] + g->weight[u][w] < distance[w])
+                    distance[w] = distance[u] + g->weight[u][w];
+            }
+        }
+    }
+    printf("\n");
 }
 typedef struct GraphType4{
     int n;
@@ -245,56 +358,55 @@ void floyd(GraphType4* g4) {
 }
 int menu_display(){
     int menu;
-    printf("1. MST(최소 신장 트리) 보기\n");
-    printf("2. Shortest Path(최단 경로 알고리즘) 보기\n");
-    printf("3. 프로그램 종료 \n");
+    printf("1. 2번 구현\n");
+    printf("2. 3,4번 구현\n");
+    printf("3.  5번 구현\n");
+    printf("4.  6번 구현\n");
+    printf("5.  8번 구현\n");
+    printf("6.  9번 구현\n");
+    printf("7.  종료\n");
     scanf("%d",&menu);
     return menu;
 }
 
 int main() {
-    int a,b;
+    int a, b;
 
-    while(1){
+    while (1) {
         int menunum = menu_display();
-        if(menunum == 1){
-        printf("1. Kruskal 출력\n");
-        printf("2. Prim 출력\n");
-        printf("3. 5번 출력\n");
-        scanf(" %d",&a);
-        if(a == 1){
+        if (menunum == 1) {
             GraphType1 *g1;
             g1 = (GraphType1 *) malloc(sizeof(GraphType1));
             graph_init(g1);
-            insert_edge(g1,0,1,7);
-            insert_edge(g1,1,2,8);
-            insert_edge(g1,2,4,5);
-            insert_edge(g1,4,6,9);
-            insert_edge(g1,6,5,11);
-            insert_edge(g1,5,3,6);
-            insert_edge(g1,3,0,5);
-            insert_edge(g1,3,4,15);
-            insert_edge(g1,3,1,9);
-            insert_edge(g1,4,5,8);
+            insert_edge(g1, 0, 1, 7);
+            insert_edge(g1, 1, 2, 8);
+            insert_edge(g1, 2, 4, 5);
+            insert_edge(g1, 4, 6, 9);
+            insert_edge(g1, 6, 5, 11);
+            insert_edge(g1, 5, 3, 6);
+            insert_edge(g1, 3, 0, 5);
+            insert_edge(g1, 3, 4, 15);
+            insert_edge(g1, 3, 1, 9);
+            insert_edge(g1, 4, 5, 8);
             kruskal(g1);
             free(g1);
 
         }
-        else if (a == 2) {
+        else if (menunum == 2) {
             GraphType2 g2 = {7,
-                           {
-                                   {0,7,INF,5,INF,INF,INF},
-                                   {7,0,8,9,7,INF,INF},
-                                   {INF,8,0,INF,INF,INF,INF},
-                                   {5,9,INF,0,15,6,INF},
-                                   {INF,7,5,15,0,8,9},
-                                   {INF,INF,INF,6,8,0,11},
-                                   {INF,INF,INF,INF,9,11,0}
-                           }
+                             {
+                                     {0, 7, INF, 5, INF, INF, INF},
+                                     {7, 0, 8, 9, 7, INF, INF},
+                                     {INF, 8, 0, INF, INF, INF, INF},
+                                     {5, 9, INF, 0, 15, 6, INF},
+                                     {INF, 7, 5, 15, 0, 8, 9},
+                                     {INF, INF, INF, 6, 8, 0, 11},
+                                     {INF, INF, INF, INF, 9, 11, 0}
+                             }
             };
-            prim(&g2,0);
+            prim(&g2, 0);
         }
-        else if( a== 3){
+        else if (menunum == 3) {
             GraphType3 g4 = {6,
                              {{0, 50, 45, 10, INF, INF, INF},
                               {INF, 0, 10, 15, INF, INF, INF},
@@ -305,41 +417,44 @@ int main() {
                              }
             };
             shortest_path1(&g4, 0);
-
         }
-        }
-        else if(menunum ==2){
-        printf("1. Dijikstra 출력\n");
-        printf("2. Floyd  출력\n");
-        scanf("%d",&b);
-        if(b == 1){
-            GraphType3 g3 = {7,
-                           {{0, 7, INF, INF, 3, 10, INF},
-                            {7, 0, 4, 10, 2, 6, INF},
-                            {INF, 4, 0, 2, INF, INF, INF},
-                            {INF, 10, 2, 0, 11, 9, 4},
-                            {3, 2, INF, 11, 0, INF, 5},
-                            {10, 6, INF, 9, INF, 0, INF},
-                            {INF, INF, INF, 4, 5, INF, 0}
-                           }
-            };
-            shortest_path(&g3, 0);
-        }
-        else if (b ==2){
-            GraphType4 g4 = {7,
-                             {{ 0, 7, INF, INF, 3, 10, INF },
-                              { 7, 0, 4, 10, 2, 6, INF },
-                              { INF, 4, 0, 2, INF, INF, INF },
-                              { INF, 10, 2, 0, 11, 9, 4 },
-                              { 3, 2, INF, 11, 0, INF, 5 },
-                              { 10, 6, INF, 9, INF, 0, INF },
-                              { INF, INF, INF, 4, 5, INF, 0 } }
+        else if (menunum == 4) {
+            GraphType4 g4 = {6,
+                             {{0, 50, 45, 10, INF, INF, INF},
+                              {INF, 0, 10, 15, INF, INF, INF},
+                              {INF, INF, 0, INF, 30, INF, INF},
+                              {20, INF, INF, 0, 15, INF, INF},
+                              {INF, 20, 35, INF, 0, INF, INF},
+                              {INF, INF, INF, INF, 3, 0, INF}
+                             }
             };
             floyd(&g4);
         }
-
-    }
-    else {
+        else if (menunum == 5) {
+            GraphType3 g3 = {6,
+                             {{0, 50, 45, 10, INF, INF, INF},
+                              {INF, 0, 10, 15, INF, INF, INF},
+                              {INF, INF, 0, INF, 30, INF, INF},
+                              {20, INF, INF, 0, 15, INF, INF},
+                              {INF, 20, 35, INF, 0, INF, INF},
+                              {INF, INF, INF, INF, 3, 0, INF}
+                             }
+            };
+            shortest_path2(&g3, 0);
+        }
+        else if (menunum == 6) {
+            GraphType3 g3 = {6,
+                             {{0, 50, 45, 10, INF, INF, INF},
+                              {INF, 0, 10, 15, INF, INF, INF},
+                              {INF, INF, 0, INF, 30, INF, INF},
+                              {20, INF, INF, 0, 15, INF, INF},
+                              {INF, 20, 35, INF, 0, INF, INF},
+                              {INF, INF, INF, INF, 3, 0, INF}
+                             }
+            };
+            shortest_path3(&g3, 0);
+        }
+        else {
             break;
         }
     }
