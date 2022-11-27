@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -21,25 +21,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e720c5c-8358-4e30-b8ae-60032f7b9153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Quick.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quick_sort/.idea/Quick_sort.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Quick_sort/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Shelll_sort/.idea/Shelll_sort.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../t/.idea/t.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/11jang" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/11jang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/CMakeFiles/11jang.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/CMakeFiles/11jang.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Quick_sort/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Quick_sort/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,27 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Quick" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Quick" TARGET_NAME="Quick" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Quick" RUN_TARGET_NAME="Quick">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -103,6 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1668667877215</updated>
       <workItem from="1668667878534" duration="3051000" />
+      <workItem from="1669252998140" duration="1231000" />
+      <workItem from="1669269860236" duration="1078000" />
     </task>
     <servers />
   </component>

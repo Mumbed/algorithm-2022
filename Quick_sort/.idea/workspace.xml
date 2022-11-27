@@ -19,13 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eaffa98-a7f1-43ff-8a61-ae3db161f6bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/11jang" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/11jang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/CMakeFiles/11jang.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/CMakeFiles/11jang.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../11jang/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../11jang/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +71,7 @@
       <updated>1668665114140</updated>
       <workItem from="1668665115653" duration="766000" />
       <workItem from="1668667860455" duration="5000" />
+      <workItem from="1669252950389" duration="5000" />
     </task>
     <servers />
   </component>

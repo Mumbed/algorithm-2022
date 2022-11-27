@@ -1,0 +1,17 @@
+# ninja log v5
+0	273	1669001976000853159	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+273	333	1669001976062362570	merge_sort	ad5fcebbed2bedb
+1	252	1669002053698016795	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+252	304	1669002053751238476	merge_sort	ad5fcebbed2bedb
+1	28	1669002062313339947	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+28	64	1669002062349228110	merge_sort	ad5fcebbed2bedb
+1	254	1669002303343655274	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+255	305	1669002303397020992	merge_sort	ad5fcebbed2bedb
+1	251	1669002476684338346	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+251	303	1669002476738474955	merge_sort	ad5fcebbed2bedb
+0	28	1669002502590071145	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+29	63	1669002502625044047	merge_sort	ad5fcebbed2bedb
+0	24	1669002507081365692	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+24	57	1669002507115143590	merge_sort	ad5fcebbed2bedb
+0	255	1669002525173614443	CMakeFiles/merge_sort.dir/main.c.o	dfb259d6f809663
+255	305	1669002525225374380	merge_sort	ad5fcebbed2bedb
